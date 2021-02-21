@@ -1,7 +1,8 @@
-//import teppanSection
+//import Stations
 import teppanStation from "./data/teppanStation.js";
+import wokStation from "./data/wokStation.js";
 
-// select individual dishes
+// select individual dishes - teppan
 
 // const yakiSoba = teppanStation[0].yakiSoba;
 // const yasaiYakiSoba = teppanStation[1].yasaiYakiSoba;
@@ -10,11 +11,9 @@ import teppanStation from "./data/teppanStation.js";
 // const yakiUdon = teppanStation[4].yakiUdon;
 // const gingerChicken = teppanStation[5].gingerChicken;
 
-// const createList = () => {
-//   const ul = document.querySelector(".ul");
-//   const li = document.createElement("li");
-//   li.innerHTML = yakiSoba.parLevels.threeThousand;
-//   //   console.log(yakiSoba.parLevels.twelveThousand);
-//   ul.appendChild(li);
-// };
-// createList();
+// select individual dishes - wok
+
+// const raisukaree = wokStation[0].raisukaree;
+// const firecracker = wokStation[1].firecracker;
+// const mushroomMix = wokStation[2].mushroomMix;
+// const wokGreens = wokStation[3].wokGreens;
