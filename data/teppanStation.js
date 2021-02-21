@@ -15,15 +15,15 @@ const teppanStation = [
         elevenThousand: 70,
         twelveThousand: 80,
       },
-      //   ingredients: {
-      //     "red pepper": 20,
-      //     "green pepper": 20,
-      //     "teppan white onion": 20,   // Ingredients boilerplate
-      //     "yaki spring onion": 20,
-      //     beansprouts: 100,
-      //     "yaki chicken": 40,
-      //     "prawns halved": 8,
-      //   },
+      // ingredients: {
+      //   "red pepper": 20,
+      //   "green pepper": 20,
+      //   "teppan white onion": 20, // Ingredients boilerplate
+      //   "yaki spring onion": 20,
+      //   beansprouts: 100,
+      //   "yaki chicken": 40,
+      //   "prawns halved": 8,
+      // },
     },
   },
   {

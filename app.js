@@ -2,10 +2,19 @@
 import teppanStation from "./data/teppanStation.js";
 
 // select individual dishes
+
 // const yakiSoba = teppanStation[0].yakiSoba;
 // const yasaiYakiSoba = teppanStation[1].yasaiYakiSoba;
 // const padThai = teppanStation[2].padThai;
 // const teriyaki = teppanStation[3].teriyaki;
 // const yakiUdon = teppanStation[4].yakiUdon;
 // const gingerChicken = teppanStation[5].gingerChicken;
-console.log(teppanStation);
+
+// const createList = () => {
+//   const ul = document.querySelector(".ul");
+//   const li = document.createElement("li");
+//   li.innerHTML = yakiSoba.parLevels.threeThousand;
+//   //   console.log(yakiSoba.parLevels.twelveThousand);
+//   ul.appendChild(li);
+// };
+// createList();
