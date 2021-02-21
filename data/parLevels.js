@@ -15,6 +15,15 @@ const teppanStation = [
         elevenThousand: 70,
         twelveThousand: 80,
       },
+      //   ingredients: {
+      //     "red pepper": 20,
+      //     "green pepper": 20,
+      //     "teppan white onion": 20,   // <= For later development
+      //     "yaki spring onion": 20,
+      //     beansprouts: 100,
+      //     "yaki chicken": 40,
+      //     "prawns halved": 8,
+      //   },
     },
   },
   {
@@ -104,10 +113,10 @@ const teppanStation = [
   },
 ];
 
-const yakiSoba = teppanStation[0].yakiSoba;
 // const yakiSoba = teppanStation[0].yakiSoba;
-// const yakiSoba = teppanStation[0].yakiSoba;
-// const yakiSoba = teppanStation[0].yakiSoba;
-// const yakiSoba = teppanStation[0].yakiSoba;
-// const yakiSoba = teppanStation[0].yakiSoba;
-console.log(teppanStation);
+// const yasaiYakiSoba = teppanStation[1].yasaiYakiSoba;
+// const padThai = teppanStation[2].padThai;
+// const teriyaki = teppanStation[3].teriyaki;
+// const yakiUdon = teppanStation[4].yakiUdon;
+// const gingerChicken = teppanStation[5].gingerChicken;
+
