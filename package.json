@@ -1,0 +1,10 @@
+{
+  "name": "par-levels",
+  "version": "1.0.0",
+  "description": "par levels and ingredients",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {},
+  "author": "Oliver Nemes",
+  "license": "MIT"
+}

@@ -18,7 +18,7 @@ const teppanStation = [
       //   ingredients: {
       //     "red pepper": 20,
       //     "green pepper": 20,
-      //     "teppan white onion": 20,   // <= For later development
+      //     "teppan white onion": 20,   // Ingredients boilerplate
       //     "yaki spring onion": 20,
       //     beansprouts: 100,
       //     "yaki chicken": 40,
@@ -120,3 +120,4 @@ const teppanStation = [
 // const yakiUdon = teppanStation[4].yakiUdon;
 // const gingerChicken = teppanStation[5].gingerChicken;
 
+export default teppanStation;
