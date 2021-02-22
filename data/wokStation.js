@@ -4,7 +4,7 @@
 
 const wokStation = [
   {
-    raisukaree: {
+    dish: {
       id: Math.floor(Math.random() * 10000),
       name: "Raisukaree",
       parLevels: {
@@ -23,7 +23,7 @@ const wokStation = [
     },
   },
   {
-    firecracker: {
+    dish: {
       id: Math.floor(Math.random() * 10000),
       name: "Firecracker",
       parLevels: {
@@ -42,7 +42,7 @@ const wokStation = [
     },
   },
   {
-    mushroomMix: {
+    dish: {
       id: Math.floor(Math.random() * 10000),
       name: "Mixed mushrooms",
       parLevels: {
@@ -61,7 +61,7 @@ const wokStation = [
     },
   },
   {
-    wokGreens: {
+    dish: {
       id: Math.floor(Math.random() * 10000),
       name: "Wok greens",
       parLevels: {

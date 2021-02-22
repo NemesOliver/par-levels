@@ -14,7 +14,8 @@
       </header>
       <form class="form-group d-flex flex-sm-column align-items-sm-center">
         <label for="forecast">Prep for</label>
-        <select class="form-control" id="forecast">
+        <select class="form-control" id="forecast" class="prep-level-options">
+          <option value="default">--select--</option>
           <option value="2k">£ 2.000</option>
           <option value="3k">£ 3.000</option>
           <option value="4k">£ 4.000</option>
@@ -38,13 +39,7 @@
             <th scope="col">Prep level</th>
           </tr>
         </thead>
-        <tbody id="wokTable">
-          <tr>
-            <th scope="row">1</th>
-            <td>Raisukaree</td>
-            <td>25</td>
-          </tr>
-        </tbody>
+        <tbody id="wokTable"></tbody>
       </table>
       <!--teppan section-->
       <table class="table table-sm my-5">
@@ -55,13 +50,7 @@
             <th scope="col">Prep level</th>
           </tr>
         </thead>
-        <tbody id="teppanTable">
-          <tr>
-            <th scope="row">1</th>
-            <td>Yaki Soba</td>
-            <td>20</td>
-          </tr>
-        </tbody>
+        <tbody id="teppanTable"></tbody>
       </table>
       <!--Fry section-->
       <table class="table table-sm my-5">
@@ -72,13 +61,7 @@
             <th scope="col">Prep level</th>
           </tr>
         </thead>
-        <tbody id="fryTable">
-          <tr>
-            <th scope="row">1</th>
-            <td>Chicken katsu</td>
-            <td>2</td>
-          </tr>
-        </tbody>
+        <tbody id="fryTable"></tbody>
       </table>
     </div>
     <script type="module" src="./app.js"></script>

@@ -1,7 +1,7 @@
 // par levels per sales
 const fryStation = [
   {
-    chickenKatsu: {
+    dish: {
       id: Math.floor(Math.random() * 10000),
       name: "Chicken katsu",
       parLevels: {
@@ -20,7 +20,7 @@ const fryStation = [
     },
   },
   {
-    yasaiKatsu: {
+    dish: {
       id: Math.floor(Math.random() * 10000),
       name: "Yasai katsu",
       parLevels: {
@@ -39,7 +39,7 @@ const fryStation = [
     },
   },
   {
-    pankoSeitan: {
+    dish: {
       id: Math.floor(Math.random() * 10000),
       name: "Panko seitan",
       parLevels: {
@@ -58,7 +58,7 @@ const fryStation = [
     },
   },
   {
-    chilliSquid: {
+    dish: {
       id: Math.floor(Math.random() * 10000),
       name: "Chilli squid",
       parLevels: {
@@ -75,7 +75,7 @@ const fryStation = [
         twelveThousand: 15,
       },
     },
-    ebiKatsu: {
+    dish: {
       id: Math.floor(Math.random() * 10000),
       name: "Ebi katsu",
       parLevels: {
@@ -92,7 +92,7 @@ const fryStation = [
         twelveThousand: 4,
       },
     },
-    duckGyoza: {
+    dish: {
       id: Math.floor(Math.random() * 10000),
       name: "Duck gyoza",
       parLevels: {
@@ -109,7 +109,7 @@ const fryStation = [
         twelveThousand: 6,
       },
     },
-    ebiGyozaPieces: {
+    dish: {
       id: Math.floor(Math.random() * 10000),
       name: "Ebi gyoza",
       parLevels: {

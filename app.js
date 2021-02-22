@@ -12,13 +12,6 @@ import fryStation from "./data/fryStation.js";
 // const yakiUdon = teppanStation[4].yakiUdon;
 // const gingerChicken = teppanStation[5].gingerChicken;
 
-// select individual dishes - wok
-
-const raisukaree = wokStation[0].raisukaree;
-const firecracker = wokStation[1].firecracker;
-const mushroomMix = wokStation[2].mushroomMix;
-const wokGreens = wokStation[3].wokGreens;
-
 // select individual dishes - fry
 
 // const chickenKatsu = fryStation[0].chickenKatsu;
@@ -29,5 +22,88 @@ const wokGreens = wokStation[3].wokGreens;
 // const duckGyoza = fryStation[5].duckGyoza;
 // const ebiGyozaPieces = fryStation[5].ebiGyozaPieces;
 
-console.log(raisukaree);
+// add prep levels to table
+const printPrepLevels = () => {
+  let wokCounter = 1;
+  let teppanCounter = 1;
+  let fryCounter = 1;
+  const dropDown = document.getElementById("forecast");
+  dropDown.addEventListener("change", () => {
+    //switch statement for dropdown menu
+    switch (dropDown.value) {
+      case "2k":
+        // Wok
+        wokStation.forEach((object) => {
+          const wokTable = document.createElement("tr");
+          wokTable.innerHTML = `
+                
+                    <th scope="row">${wokCounter}</th>
+                    <td>${object.dish.name}</td>
+                    <td>${object.dish.parLevels.twoThousand}</td>
+         `;
+          document.querySelector("#wokTable").appendChild(wokTable);
+          wokCounter += 1;
+        });
+        // teppan
+        teppanStation.forEach((object) => {
+          const teppanTable = document.createElement("tr");
+          teppanTable.innerHTML = `
 
+                      <th scope="row">${teppanCounter}</th>
+                      <td>${object.dish.name}</td>
+                      <td>${object.dish.parLevels.twoThousand}</td>
+           `;
+          document.querySelector("#teppanTable").appendChild(teppanTable);
+          teppanCounter += 1;
+        });
+        // fry
+        fryStation.forEach((object) => {
+          const fryTable = document.createElement("tr");
+          fryTable.innerHTML = `
+  
+                        <th scope="row">${fryCounter}</th>
+                        <td>${object.dish.name}</td>
+                        <td>${object.dish.parLevels.twoThousand}</td>
+             `;
+          document.querySelector("#fryTable").appendChild(fryTable);
+          fryCounter += 1;
+        });
+        break;
+      case "3k":
+        // copy code from 2k option
+        console.log(3000);
+        break;
+      case "4k":
+        console.log(4000);
+        break;
+      case "5k":
+        console.log(5000);
+        break;
+      case "6k":
+        console.log(6000);
+        break;
+      case "7k":
+        console.log(7000);
+        break;
+      case "8k":
+        console.log(8000);
+        break;
+      case "9k":
+        console.log(9000);
+        break;
+      case "10k":
+        console.log(10000);
+        break;
+      case "11k":
+        console.log(11000);
+        break;
+      case "12k":
+        console.log(12000);
+        break;
+      default:
+        "default";
+        break;
+    }
+  });
+};
+printPrepLevels();

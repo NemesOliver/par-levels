@@ -1,7 +1,7 @@
 // par levels per sales
 const teppanStation = [
   {
-    yakiSoba: {
+    dish: {
       id: Math.floor(Math.random() * 10000),
       name: "Yaki soba",
       parLevels: {
@@ -29,7 +29,7 @@ const teppanStation = [
     },
   },
   {
-    yasaiYakiSoba: {
+    dish: {
       id: Math.floor(Math.random() * 10000),
       name: "Yasai yaki soba",
       parLevels: {
@@ -48,7 +48,7 @@ const teppanStation = [
     },
   },
   {
-    padThai: {
+    dish: {
       id: Math.floor(Math.random() * 10000),
       name: "Pad thai",
       parLevels: {
@@ -67,7 +67,7 @@ const teppanStation = [
     },
   },
   {
-    teriyaki: {
+    dish: {
       id: Math.floor(Math.random() * 10000),
       name: "Teriyaki soba",
       parLevels: {
@@ -86,7 +86,7 @@ const teppanStation = [
     },
   },
   {
-    yakiUdon: {
+    dish: {
       id: Math.floor(Math.random() * 10000),
       name: "Yaki udon",
       parLevels: {
@@ -105,7 +105,7 @@ const teppanStation = [
     },
   },
   {
-    gingerChicken: {
+    dish: {
       id: Math.floor(Math.random() * 10000),
       name: "Ginger chicken",
       parLevels: {
