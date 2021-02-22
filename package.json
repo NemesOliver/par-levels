@@ -8,8 +8,5 @@
     "start": "node app"
   },
   "author": "Oliver Nemes",
-  "license": "MIT",
-  "dependencies": {
-    "chart.js": "^2.9.4"
-  }
+  "license": "MIT"
 }
