@@ -14,10 +14,10 @@ import fryStation from "./data/fryStation.js";
 
 // select individual dishes - wok
 
-// const raisukaree = wokStation[0].raisukaree;
-// const firecracker = wokStation[1].firecracker;
-// const mushroomMix = wokStation[2].mushroomMix;
-// const wokGreens = wokStation[3].wokGreens;
+const raisukaree = wokStation[0].raisukaree;
+const firecracker = wokStation[1].firecracker;
+const mushroomMix = wokStation[2].mushroomMix;
+const wokGreens = wokStation[3].wokGreens;
 
 // select individual dishes - fry
 
@@ -29,4 +29,4 @@ import fryStation from "./data/fryStation.js";
 // const duckGyoza = fryStation[5].duckGyoza;
 // const ebiGyozaPieces = fryStation[5].ebiGyozaPieces;
 
-
+console.log(raisukaree);

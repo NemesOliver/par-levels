@@ -2,6 +2,7 @@
 const teppanStation = [
   {
     yakiSoba: {
+      name: "Yaki soba",
       parLevels: {
         twoThousand: 15,
         threeThousand: 20,
@@ -28,6 +29,7 @@ const teppanStation = [
   },
   {
     yasaiYakiSoba: {
+      name: "Yasai yaki soba",
       parLevels: {
         twoThousand: 5,
         threeThousand: 7,
@@ -45,6 +47,7 @@ const teppanStation = [
   },
   {
     padThai: {
+      name: "Pad thai",
       parLevels: {
         twoThousand: 20,
         threeThousand: 25,
@@ -62,6 +65,7 @@ const teppanStation = [
   },
   {
     teriyaki: {
+      name: "Teriyaki soba",
       parLevels: {
         twoThousand: 10,
         threeThousand: 15,
@@ -79,6 +83,7 @@ const teppanStation = [
   },
   {
     yakiUdon: {
+      name: "Yaki udon",
       parLevels: {
         twoThousand: 8,
         threeThousand: 10,
@@ -96,6 +101,7 @@ const teppanStation = [
   },
   {
     gingerChicken: {
+      name: "Ginger chicken",
       parLevels: {
         twoThousand: 6,
         threeThousand: 8,

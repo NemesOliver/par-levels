@@ -2,6 +2,7 @@
 const wokStation = [
   {
     raisukaree: {
+      name: "Raisukaree",
       parLevels: {
         twoThousand: 10,
         threeThousand: 15,
@@ -19,6 +20,7 @@ const wokStation = [
   },
   {
     firecracker: {
+      name: "Firecracker",
       parLevels: {
         twoThousand: 10,
         threeThousand: 15,
@@ -36,6 +38,7 @@ const wokStation = [
   },
   {
     mushroomMix: {
+      name: "Mixed mushrooms",
       parLevels: {
         twoThousand: 10,
         threeThousand: 12,
@@ -53,6 +56,7 @@ const wokStation = [
   },
   {
     wokGreens: {
+      name: "Wok greens",
       parLevels: {
         twoThousand: 7,
         threeThousand: 10,

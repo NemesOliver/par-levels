@@ -2,6 +2,7 @@
 const fryStation = [
   {
     chickenKatsu: {
+      name: "Chicken katsu",
       parLevels: {
         twoThousand: 1,
         threeThousand: 1,
@@ -19,6 +20,7 @@ const fryStation = [
   },
   {
     yasaiKatsu: {
+      name: "Yasai katsu",
       parLevels: {
         twoThousand: 1,
         threeThousand: 1,
@@ -36,6 +38,7 @@ const fryStation = [
   },
   {
     pankoSeitan: {
+      name: "Panko seitan",
       parLevels: {
         twoThousand: 5,
         threeThousand: 8,
@@ -53,6 +56,7 @@ const fryStation = [
   },
   {
     chilliSquid: {
+      name: "Chilli squid",
       parLevels: {
         twoThousand: 4,
         threeThousand: 4,
@@ -68,6 +72,7 @@ const fryStation = [
       },
     },
     ebiKatsu: {
+      name: "Ebi katsu",
       parLevels: {
         twoThousand: 1,
         threeThousand: 1,
@@ -83,6 +88,7 @@ const fryStation = [
       },
     },
     duckGyoza: {
+      name: "Duck gyoza",
       parLevels: {
         twoThousand: 1,
         threeThousand: 1,
@@ -98,6 +104,7 @@ const fryStation = [
       },
     },
     ebiGyozaPieces: {
+      name: "Ebi gyoza",
       parLevels: {
         twoThousand: 10,
         threeThousand: 10,
