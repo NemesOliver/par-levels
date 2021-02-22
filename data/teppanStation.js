@@ -2,6 +2,7 @@
 const teppanStation = [
   {
     yakiSoba: {
+      id: Math.floor(Math.random() * 10000),
       name: "Yaki soba",
       parLevels: {
         twoThousand: 15,
@@ -29,6 +30,7 @@ const teppanStation = [
   },
   {
     yasaiYakiSoba: {
+      id: Math.floor(Math.random() * 10000),
       name: "Yasai yaki soba",
       parLevels: {
         twoThousand: 5,
@@ -47,6 +49,7 @@ const teppanStation = [
   },
   {
     padThai: {
+      id: Math.floor(Math.random() * 10000),
       name: "Pad thai",
       parLevels: {
         twoThousand: 20,
@@ -65,6 +68,7 @@ const teppanStation = [
   },
   {
     teriyaki: {
+      id: Math.floor(Math.random() * 10000),
       name: "Teriyaki soba",
       parLevels: {
         twoThousand: 10,
@@ -83,6 +87,7 @@ const teppanStation = [
   },
   {
     yakiUdon: {
+      id: Math.floor(Math.random() * 10000),
       name: "Yaki udon",
       parLevels: {
         twoThousand: 8,
@@ -101,6 +106,7 @@ const teppanStation = [
   },
   {
     gingerChicken: {
+      id: Math.floor(Math.random() * 10000),
       name: "Ginger chicken",
       parLevels: {
         twoThousand: 6,

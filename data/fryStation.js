@@ -2,6 +2,7 @@
 const fryStation = [
   {
     chickenKatsu: {
+      id: Math.floor(Math.random() * 10000),
       name: "Chicken katsu",
       parLevels: {
         twoThousand: 1,
@@ -20,6 +21,7 @@ const fryStation = [
   },
   {
     yasaiKatsu: {
+      id: Math.floor(Math.random() * 10000),
       name: "Yasai katsu",
       parLevels: {
         twoThousand: 1,
@@ -38,6 +40,7 @@ const fryStation = [
   },
   {
     pankoSeitan: {
+      id: Math.floor(Math.random() * 10000),
       name: "Panko seitan",
       parLevels: {
         twoThousand: 5,
@@ -56,6 +59,7 @@ const fryStation = [
   },
   {
     chilliSquid: {
+      id: Math.floor(Math.random() * 10000),
       name: "Chilli squid",
       parLevels: {
         twoThousand: 4,
@@ -72,6 +76,7 @@ const fryStation = [
       },
     },
     ebiKatsu: {
+      id: Math.floor(Math.random() * 10000),
       name: "Ebi katsu",
       parLevels: {
         twoThousand: 1,
@@ -88,6 +93,7 @@ const fryStation = [
       },
     },
     duckGyoza: {
+      id: Math.floor(Math.random() * 10000),
       name: "Duck gyoza",
       parLevels: {
         twoThousand: 1,
@@ -104,6 +110,7 @@ const fryStation = [
       },
     },
     ebiGyozaPieces: {
+      id: Math.floor(Math.random() * 10000),
       name: "Ebi gyoza",
       parLevels: {
         twoThousand: 10,

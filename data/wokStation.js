@@ -1,7 +1,11 @@
 // par levels per sales
+
+// imports
+
 const wokStation = [
   {
     raisukaree: {
+      id: Math.floor(Math.random() * 10000),
       name: "Raisukaree",
       parLevels: {
         twoThousand: 10,
@@ -20,6 +24,7 @@ const wokStation = [
   },
   {
     firecracker: {
+      id: Math.floor(Math.random() * 10000),
       name: "Firecracker",
       parLevels: {
         twoThousand: 10,
@@ -38,6 +43,7 @@ const wokStation = [
   },
   {
     mushroomMix: {
+      id: Math.floor(Math.random() * 10000),
       name: "Mixed mushrooms",
       parLevels: {
         twoThousand: 10,
@@ -56,6 +62,7 @@ const wokStation = [
   },
   {
     wokGreens: {
+      id: Math.floor(Math.random() * 10000),
       name: "Wok greens",
       parLevels: {
         twoThousand: 7,
