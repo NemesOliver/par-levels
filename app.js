@@ -37,7 +37,7 @@ const printPrepLevels = () => {
           document.querySelector("#teppanTable").appendChild(teppanTable);
           teppanCounter += 1;
         });
-        // fry
+        // fry !!! Not all fry dishes are being displayd !!!
         fryStation.forEach((object) => {
           const fryTable = document.createElement("tr");
           fryTable.innerHTML = `
