@@ -14,41 +14,90 @@ const printPrepLevels = () => {
     switch (dropDown.value) {
       case "2k":
         // Wok
-        wokStation.forEach((object) => {
-          const wokTable = document.createElement("tr");
-          wokTable.innerHTML = `
-                
-                    <th scope="row">${wokCounter}</th>
-                    <td>${object.dish.name}</td>
-                    <td>${object.dish.parLevels.twoThousand}</td>
-         `;
-          document.querySelector("#wokTable").appendChild(wokTable);
-          wokCounter += 1;
-        });
-        // teppan
-        teppanStation.forEach((object) => {
-          const teppanTable = document.createElement("tr");
-          teppanTable.innerHTML = `
-
-                      <th scope="row">${teppanCounter}</th>
+        // check if table is empty
+        if (document.querySelector("#wokTable").innerHTML === "") {
+          wokStation.forEach((object) => {
+            const wokTable = document.createElement("tr");
+            wokTable.innerHTML = `
+                  
+                      <th scope="row">${wokCounter}</th>
                       <td>${object.dish.name}</td>
                       <td>${object.dish.parLevels.twoThousand}</td>
            `;
-          document.querySelector("#teppanTable").appendChild(teppanTable);
-          teppanCounter += 1;
-        });
-        // fry !!! Not all fry dishes are being displayd !!!
-        fryStation.forEach((object) => {
-          const fryTable = document.createElement("tr");
-          fryTable.innerHTML = `
+            document.querySelector("#wokTable").appendChild(wokTable);
+            wokCounter += 1;
+          });
+        } else {
+          wokCounter = 1;
+          document.querySelector("#wokTable").innerHTML = "";
+          wokStation.forEach((object) => {
+            const wokTable = document.createElement("tr");
+            wokTable.innerHTML = `
+                  
+                      <th scope="row">${wokCounter}</th>
+                      <td>${object.dish.name}</td>
+                      <td>${object.dish.parLevels.twoThousand}</td>
+           `;
+            document.querySelector("#wokTable").appendChild(wokTable);
+            wokCounter += 1;
+          });
+        }
+        // teppan
+        if (document.querySelector("#teppanTable").innerHTML === "") {
+          teppanStation.forEach((object) => {
+            const teppanTable = document.createElement("tr");
+            teppanTable.innerHTML = `
+  
+                        <th scope="row">${teppanCounter}</th>
+                        <td>${object.dish.name}</td>
+                        <td>${object.dish.parLevels.twoThousand}</td>
+             `;
+            document.querySelector("#teppanTable").appendChild(teppanTable);
+            teppanCounter += 1;
+          });
+        } else {
+          teppanCounter = 1;
+          document.querySelector("#teppanTable").innerHTML = "";
+          teppanStation.forEach((object) => {
+            const teppanTable = document.createElement("tr");
+            teppanTable.innerHTML = `
+  
+                        <th scope="row">${teppanCounter}</th>
+                        <td>${object.dish.name}</td>
+                        <td>${object.dish.parLevels.twoThousand}</td>
+             `;
+            document.querySelector("#teppanTable").appendChild(teppanTable);
+            teppanCounter += 1;
+          });
+        }
+        // fry
+        if (document.querySelector("#fryTable").innerHTML === "") {
+          fryStation.forEach((object) => {
+            const fryTable = document.createElement("tr");
+            fryTable.innerHTML = `
   
                         <th scope="row">${fryCounter}</th>
                         <td>${object.dish.name}</td>
                         <td>${object.dish.parLevels.twoThousand}</td>
              `;
-          document.querySelector("#fryTable").appendChild(fryTable);
-          fryCounter += 1;
-        });
+            document.querySelector("#fryTable").appendChild(fryTable);
+            fryCounter += 1;
+          });
+        } else {
+          fryCounter = 1;
+          document.querySelector("#fryTable").innerHTML = "";
+          fryStation.forEach((object) => {
+            const fryTable = document.createElement("tr");
+            fryTable.innerHTML = `
+  
+                        <th scope="row">${fryCounter}</th>
+                        <td>${object.dish.name}</td>
+                        <td>${object.dish.parLevels.twoThousand}</td>
+             `;
+            document.querySelector("#fryTable").appendChild(fryTable);
+            fryCounter += 1;
+          });
+        }
         break;
       case "3k":
         // copy code from 2k option
@@ -82,9 +131,15 @@ const printPrepLevels = () => {
         console.log(12000);
         break;
       default:
-        "default";
+        document.querySelector("#wokTable").innerHTML = "";
+        document.querySelector("#teppanTable").innerHTML = "";
+        document.querySelector("#fryTable").innerHTML = "";
+        wokCounter = 1;
+        teppanCounter = 1;
+        fryCounter = 1;
         break;
     }
   });
 };
+console.log();
 printPrepLevels();
