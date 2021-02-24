@@ -10,6 +10,6 @@
 - SCSS
 - JavaScript ES6
 
-## Npm packages used
+## Progress
 
-- Chars.js -> <https://www.chartjs.org/>
+- In progress...
