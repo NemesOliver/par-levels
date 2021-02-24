@@ -8,11 +8,11 @@
     <title>Par levels</title>
   </head>
   <body>
-    <div class="container d-flex align-items-sm-center flex-sm-column">
+    <div class="container d-flex align-items-center flex-column">
       <header class="my-5">
         <h1>Par levels</h1>
       </header>
-      <form class="form-group d-flex flex-sm-column align-items-sm-center">
+      <form class="form-group d-flex flex-column align-items-center">
         <label for="forecast">Prep for</label>
         <select class="form-control" id="forecast" class="prep-level-options">
           <option value="default">--select--</option>
@@ -29,41 +29,42 @@
           <option value="12k">£ 12.000</option>
         </select>
       </form>
-      <hr class="my-3" />
-      <!-- wok section -->
-      <table class="table table-sm my-5">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Wok section</th>
-            <th scope="col">Prep level</th>
-          </tr>
-        </thead>
-        <tbody id="wokTable"></tbody>
-      </table>
-      <!--teppan section-->
-      <table class="table table-sm my-5">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Teppan section</th>
-            <th scope="col">Prep level</th>
-          </tr>
-        </thead>
-        <tbody id="teppanTable"></tbody>
-      </table>
-      <!--Fry section-->
-      <table class="table table-sm my-5">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Fry section</th>
-            <th scope="col">Prep level</th>
-          </tr>
-        </thead>
-        <tbody id="fryTable"></tbody>
-      </table>
-      <button id="btn-print" class="btn btn-primary btn-block">Print</button>
+      <div id="printer-version" class="container-fluid">
+        <!-- wok section -->
+        <table class="table table-sm my-5">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Wok section</th>
+              <th scope="col">Prep level</th>
+            </tr>
+          </thead>
+          <tbody id="wokTable"></tbody>
+        </table>
+        <!--teppan section-->
+        <table class="table table-sm my-5">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Teppan section</th>
+              <th scope="col">Prep level</th>
+            </tr>
+          </thead>
+          <tbody id="teppanTable"></tbody>
+        </table>
+        <!--Fry section-->
+        <table class="table table-sm my-5">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Fry section</th>
+              <th scope="col">Prep level</th>
+            </tr>
+          </thead>
+          <tbody id="fryTable"></tbody>
+        </table>
+      </div>
+      <!-- <button id="btn-print" class="btn btn-primary float-left">Print</button> -->
     </div>
     <script type="module" src="./app.js"></script>
   </body>
