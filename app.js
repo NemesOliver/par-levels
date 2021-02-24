@@ -141,5 +141,8 @@ const printPrepLevels = () => {
     }
   });
 };
-console.log();
+// print option for later
+// document.querySelector("#btn-print").addEventListener("click", () => {
+//   window.print();
+// });
 printPrepLevels();
