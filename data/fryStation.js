@@ -75,6 +75,8 @@ const fryStation = [
         twelveThousand: 15,
       },
     },
+  },
+  {
     dish: {
       id: Math.floor(Math.random() * 10000),
       name: "Ebi katsu",
@@ -92,6 +94,8 @@ const fryStation = [
         twelveThousand: 4,
       },
     },
+  },
+  {
     dish: {
       id: Math.floor(Math.random() * 10000),
       name: "Duck gyoza",
@@ -109,6 +113,8 @@ const fryStation = [
         twelveThousand: 6,
       },
     },
+  },
+  {
     dish: {
       id: Math.floor(Math.random() * 10000),
       name: "Ebi gyoza",
