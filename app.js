@@ -16,3 +16,20 @@ const teppanDishesNames = getDishesNames(teppanStation);
 const wokDishesNames = getDishesNames(wokStation);
 const fryDishesNames = getDishesNames(fryStation);
 
+const getDishesParLevels = (dishes) => {
+  dishes.forEach((dish) => {
+    console.log(dish.dish.parLevels["twoThousand"]);
+  });
+};
+getDishesParLevels(teppanStation);
+
+// document.querySelector("#wokTable").innerHTML = "";
+//           wokStation.forEach((object) => {
+//             const wokTable = document.createElement("tr");
+//             wokTable.innerHTML = `
+
+//                       <th scope="row">${wokCounter}</th>
+//                       <td>${object.dish.name}</td>
+//                       <td>${object.dish.parLevels.twoThousand}</td>
+//            `;
+//             document.querySelector("#wokTable").appendChild(wokTable);
