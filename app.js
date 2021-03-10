@@ -34,16 +34,27 @@ const teppanParLevels = getDishesParLevels(teppanStation);
 const wokParLevels = getDishesParLevels(wokStation);
 const fryParLevels = getDishesParLevels(fryStation);
 
-const selectParLevels = (section) => {
-  let selectedParlevels = [];
+// get par levels depending on drop down menu selection
+const dropDown = document.getElementById("forecast");
 
+const selectParLevels = (section, selection) => {
+  let selectedParlevels = [];
   section.forEach((item) => {
     for (const key in item) {
-      if (key === "sevenThousand") {
+      if (key === selection) {
         selectedParlevels.push(item[key]);
       }
     }
   });
   return selectedParlevels;
 };
-selectParLevels(teppanParLevels);
+
+// logs dish names and parlevels depending on the option selected
+const selectAndDisplayOptionWok = () => {
+  let selectedOption = dropDown.value;
+  let arr = selectParLevels(wokParLevels, selectedOption);
+  console.log(arr);
+  console.log(teppanDishesNames);
+};
+
+dropDown.addEventListener("change", selectAndDisplayOptionWok);
