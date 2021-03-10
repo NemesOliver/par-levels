@@ -34,17 +34,16 @@ const teppanParLevels = getDishesParLevels(teppanStation);
 const wokParLevels = getDishesParLevels(wokStation);
 const fryParLevels = getDishesParLevels(fryStation);
 
-console.log(teppanParLevels);
+const selectParLevels = (section) => {
+  let selectedParlevels = [];
 
-
-
-// document.querySelector("#wokTable").innerHTML = "";
-//           wokStation.forEach((object) => {
-//             const wokTable = document.createElement("tr");
-//             wokTable.innerHTML = `
-
-//                       <th scope="row">${wokCounter}</th>
-//                       <td>${object.dish.name}</td>
-//                       <td>${object.dish.parLevels.twoThousand}</td>
-//            `;
-//             document.querySelector("#wokTable").appendChild(wokTable);
+  section.forEach((item) => {
+    for (const key in item) {
+      if (key === "sevenThousand") {
+        selectedParlevels.push(item[key]);
+      }
+    }
+  });
+  return selectedParlevels;
+};
+selectParLevels(teppanParLevels);
