@@ -50,11 +50,11 @@ const selectParLevels = (section, selection) => {
 };
 
 // logs dish names and parlevels depending on the option selected
-const selectAndDisplayOptionWok = () => {
+const selectAndDisplayOptionTeppan = () => {
   let selectedOption = dropDown.value;
   let arr = selectParLevels(wokParLevels, selectedOption);
   console.log(arr);
   console.log(teppanDishesNames);
 };
 
-dropDown.addEventListener("change", selectAndDisplayOptionWok);
+dropDown.addEventListener("change", selectAndDisplayOptionTeppan);
