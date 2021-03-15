@@ -7,7 +7,7 @@
 ## Languages used
 
 - HTML5
-- SCSS
+- Bootstrap CSS
 - JavaScript ES6
 
 ## Progress
