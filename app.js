@@ -51,11 +51,12 @@ const selectAndDisplay = () => {
   let wokParLvlsArr = selectParLevels(wokParLevels, selectedOption);
   let teppanParLvlsArr = selectParLevels(teppanParLevels, selectedOption);
   let fryParLvlsArr = selectParLevels(fryParLevels, selectedOption);
-  //wok table
 
-  // clear Table
+  //wok table
   let wokCounter = 1;
+  // clear Table
   document.querySelector("#wokTable").innerHTML = "";
+
   wokDishesNames.forEach((name, index) => {
     // Print data
     const wokTable = document.createElement("tr");
@@ -66,6 +67,40 @@ const selectAndDisplay = () => {
     `;
     document.querySelector("#wokTable").appendChild(wokTable);
     wokCounter += 1;
+  });
+
+  //teppan table
+  let teppanCounter = 1;
+  // clear Table
+  document.querySelector("#teppanTable").innerHTML = "";
+
+  teppanDishesNames.forEach((name, index) => {
+    // Print data
+    const teppanTable = document.createElement("tr");
+    teppanTable.innerHTML = `
+    <th scope="row">${teppanCounter}</th>
+    <td>${name}</td>
+    <td>${teppanParLvlsArr[index]}</td>
+    `;
+    document.querySelector("#teppanTable").appendChild(teppanTable);
+    teppanCounter += 1;
+  });
+
+  //fry table
+  let fryCounter = 1;
+  // clear Table
+  document.querySelector("#fryTable").innerHTML = "";
+
+  fryDishesNames.forEach((name, index) => {
+    // Print data
+    const fryTable = document.createElement("tr");
+    fryTable.innerHTML = `
+    <th scope="row">${fryCounter}</th>
+    <td>${name}</td>
+    <td>${fryParLvlsArr[index]}</td>
+    `;
+    document.querySelector("#fryTable").appendChild(fryTable);
+    fryCounter += 1;
   });
 };
 
