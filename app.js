@@ -5,11 +5,7 @@ import fryStation from "./data/fryStation.js";
 
 // Get names
 const getDishesNames = (dishes) => {
-  let names = [];
-  dishes.forEach((dish) => {
-    let name = dish.dish.name;
-    names.push(name);
-  });
+  const names = dishes.map((dish) => dish.dish.name);
   return names;
 };
 
@@ -57,4 +53,4 @@ const selectAndDisplayOptionTeppan = () => {
   console.log(teppanDishesNames);
 };
 
-dropDown.addEventListener("change", selectAndDisplayOptionTeppan);
+// dropDown.addEventListener("change", selectAndDisplayOptionTeppan);
