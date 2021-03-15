@@ -45,12 +45,28 @@ const selectParLevels = (section, selection) => {
   return selectedParlevels;
 };
 
-// logs dish names and parlevels depending on the option selected
-const selectAndDisplayOptionTeppan = () => {
+// select and display par levels
+const selectAndDisplay = () => {
   let selectedOption = dropDown.value;
-  let arr = selectParLevels(wokParLevels, selectedOption);
-  console.log(arr);
-  console.log(teppanDishesNames);
+  let wokParLvlsArr = selectParLevels(wokParLevels, selectedOption);
+  let teppanParLvlsArr = selectParLevels(teppanParLevels, selectedOption);
+  let fryParLvlsArr = selectParLevels(fryParLevels, selectedOption);
+  //wok table
+
+  // clear Table
+  let wokCounter = 1;
+  document.querySelector("#wokTable").innerHTML = "";
+  wokDishesNames.forEach((name, index) => {
+    // Print data
+    const wokTable = document.createElement("tr");
+    wokTable.innerHTML = `
+    <th scope="row">${wokCounter}</th>
+    <td>${name}</td>
+    <td>${wokParLvlsArr[index]}</td>
+    `;
+    document.querySelector("#wokTable").appendChild(wokTable);
+    wokCounter += 1;
+  });
 };
 
-// dropDown.addEventListener("change", selectAndDisplayOptionTeppan);
+dropDown.addEventListener("change", selectAndDisplay);
