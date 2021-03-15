@@ -45,7 +45,7 @@ const selectParLevels = (section, selection) => {
   return selectedParlevels;
 };
 
-// select and display par levels
+// Event Handler
 const selectAndDisplay = () => {
   let selectedOption = dropDown.value;
   let wokParLvlsArr = selectParLevels(wokParLevels, selectedOption);
@@ -104,4 +104,5 @@ const selectAndDisplay = () => {
   });
 };
 
+// Event Listener
 dropDown.addEventListener("change", selectAndDisplay);

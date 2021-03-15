@@ -7,9 +7,5 @@
 ## Languages used
 
 - HTML5
-- SCSS
+- Bootstrap CSS
 - JavaScript ES6
-
-## Npm packages used
-
-- Chars.js -> <https://www.chartjs.org/>
