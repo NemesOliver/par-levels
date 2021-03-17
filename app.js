@@ -31,7 +31,7 @@ const wokParLevels = getDishesParLevels(wokStation);
 const fryParLevels = getDishesParLevels(fryStation);
 
 // get par levels depending on drop down menu selection
-const dropDown = document.getElementById("forecast");
+const dropDown = document.getElementById("drop-down");
 
 const selectParLevels = (section, selected) => {
   let selectedParlevels = [];
