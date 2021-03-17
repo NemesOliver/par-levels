@@ -33,11 +33,11 @@ const fryParLevels = getDishesParLevels(fryStation);
 // get par levels depending on drop down menu selection
 const dropDown = document.getElementById("forecast");
 
-const selectParLevels = (section, selection) => {
+const selectParLevels = (section, selected) => {
   let selectedParlevels = [];
   section.forEach((item) => {
     for (const key in item) {
-      if (key === selection) {
+      if (key === selected) {
         selectedParlevels.push(item[key]);
       }
     }
@@ -47,10 +47,10 @@ const selectParLevels = (section, selection) => {
 
 // Event Handler
 const selectAndDisplay = () => {
-  let selectedOption = dropDown.value;
-  let wokParLvlsArr = selectParLevels(wokParLevels, selectedOption);
-  let teppanParLvlsArr = selectParLevels(teppanParLevels, selectedOption);
-  let fryParLvlsArr = selectParLevels(fryParLevels, selectedOption);
+  let selection = dropDown.value;
+  let wokParLvlsArr = selectParLevels(wokParLevels, selection);
+  let teppanParLvlsArr = selectParLevels(teppanParLevels, selection);
+  let fryParLvlsArr = selectParLevels(fryParLevels, selection);
 
   //wok table
   let wokCounter = 1;
@@ -103,6 +103,14 @@ const selectAndDisplay = () => {
     fryCounter += 1;
   });
 };
-
-// Event Listener
 dropDown.addEventListener("change", selectAndDisplay);
+
+// reset table with default option
+const resetTable = () => {
+  if (dropDown.value === "default") {
+    document.querySelector("#wokTable").innerHTML = "";
+    document.querySelector("#teppanTable").innerHTML = "";
+    document.querySelector("#fryTable").innerHTML = "";
+  }
+};
+dropDown.addEventListener("change", resetTable);
