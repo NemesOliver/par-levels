@@ -1,7 +1,7 @@
 //import Stations data
-import teppanStation from "./data/teppanStation.js";
-import wokStation from "./data/wokStation.js";
-import fryStation from "./data/fryStation.js";
+import teppanStation from "../data/teppanStation.js";
+import wokStation from "../data/wokStation.js";
+import fryStation from "../data/fryStation.js";
 
 // Get names
 const getDishesNames = (dishes) => {
