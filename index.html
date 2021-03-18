@@ -30,7 +30,7 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Prep count</a>
+              <a class="nav-link" href="/prepCounting.html">Prep count</a>
             </li>
           </ul>
         </div>
@@ -63,17 +63,6 @@
         </select>
       </form>
       <div id="printer-version" class="container-fluid">
-        <!-- wok section -->
-        <table class="table table-sm my-5">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Wok section</th>
-              <th scope="col">Prep level</th>
-            </tr>
-          </thead>
-          <tbody id="wokTable"></tbody>
-        </table>
         <!--teppan section-->
         <table class="table table-sm my-5">
           <thead>
@@ -84,6 +73,17 @@
             </tr>
           </thead>
           <tbody id="teppanTable"></tbody>
+        </table>
+        <!-- wok section -->
+        <table class="table table-sm my-5">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Wok section</th>
+              <th scope="col">Prep level</th>
+            </tr>
+          </thead>
+          <tbody id="wokTable"></tbody>
         </table>
         <!--Fry section-->
         <table class="table table-sm my-5">
@@ -105,5 +105,6 @@
       crossorigin="anonymous"
     ></script>
     <script type="module" src="./scripts/parLevels.js"></script>
+    <script type="module" src="./data/dishes.js"></script>
   </body>
 </html>
