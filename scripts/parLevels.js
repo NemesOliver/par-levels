@@ -36,4 +36,5 @@ const displayTable = () => {
   createTable(teppan, teppanTableId);
   createTable(fry, fryTableId);
 };
+
 dropDown.addEventListener("change", displayTable);
