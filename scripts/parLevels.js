@@ -15,16 +15,20 @@ const createTable = (section, sectionTable) => {
   let counter = 1;
   let option = dropDown.value;
   sectionTable.innerHTML = "";
-  section.forEach((dish) => {
-    const table = document.createElement("tr");
-    table.innerHTML = `
-    <th scope="row">${counter}</th>
-    <td>${dish.name}</td>
-    <td>${dish.parLevels[option]}</td>
-    `;
-    sectionTable.appendChild(table);
-    counter += 1;
-  });
+  if (option === "default") {
+    sectionTable.innerHTML = "";
+  } else {
+    section.forEach((dish) => {
+      const table = document.createElement("tr");
+      table.innerHTML = `
+        <th scope="row">${counter}</th>
+        <td>${dish.name}</td>
+        <td>${dish.parLevels[option]}</td>
+        `;
+      sectionTable.appendChild(table);
+      counter += 1;
+    });
+  }
 };
 
 const displayTable = () => {
